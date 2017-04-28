@@ -1,6 +1,6 @@
 # Load the rails application
 require File.expand_path('../application', __FILE__)
-
+require File.expand_path('../initializers/abstract_mysql2_adapter.rb', __FILE__)
 Thingspeak::Application.configure do
 	config.action_controller.perform_caching = true
 	config.cache_store = :file_store, "#{Rails.root}/tmp/cache"

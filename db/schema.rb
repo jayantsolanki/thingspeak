@@ -12,7 +12,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20150311201046) do
-
+#NATIVE_DATABASE_TYPES[:primary_key] = "int(11) auto_increment PRIMARY KEY"
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
     t.text     "body"

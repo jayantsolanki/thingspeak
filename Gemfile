@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '4.0.5'
 gem 'jquery-rails', '3.0.4'
 gem 'rails_autolink'
-gem 'mysql2'
+#gem 'mysql2'
 gem 'devise'
 gem 'twitter_oauth', git: 'git://github.com/moomerman/twitter_oauth.git'
 gem 'therubyracer'
@@ -29,7 +29,7 @@ gem 'capistrano', '~> 2.15.4'
 gem 'rack-utf8_sanitizer'
 gem 'newrelic_rpm'
 gem 'actionpack-xml_parser'
-gem 'activeadmin', github: 'gregbell/active_admin'
+#gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'chronic'
 gem 'non-stupid-digest-assets'
 gem 'em-http-request'
@@ -38,22 +38,30 @@ gem 'tzinfo-data'
 gem 'turbolinks'
 gem 'geokit-rails'
 gem 'clockwork'
-
+gem "http_parser.rb", "0.6.0"
+gem 'bcrypt', "3.1.11"
+gem 'json', "1.8.3"
+gem "eventmachine", "1.2.3"
 # to use debugger
 # gem 'ruby-debug'
-
+gem 'activeadmin', '1.0.0.pre1'
+#gem 'activeadmin'
+#gem 'activeadmin', '~>1'
+#gem 'activeadmin',"1.0.0.pre"
 # assets
 gem "sass-rails", "4.0.2"
 gem 'coffee-rails', " ~> 4.0"
 gem 'uglifier'
-
+gem "rake", "10.4.2"
 group :development do
   gem 'annotate', '~> 2.6.1'
   gem 'quiet_assets'
   gem 'puma'
   gem 'i18n-tasks', '~> 0.5.4'
 end
-
+#gem 'activeadmin'
+gem 'mysql2', '~> 0.3.18'
+#gem 'mysql2'
 group :test do
   gem 'sqlite3-ruby', '1.3.3', :require => 'sqlite3'
   gem 'rspec-rails', '~> 2.14.1'
@@ -67,4 +75,4 @@ group :test do
   gem 'ZenTest'
   gem 'database_cleaner', '~> 1.2.0'
 end
-
+gem 'activerecord-native_db_types_override'
